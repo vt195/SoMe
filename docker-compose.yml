@@ -1,0 +1,59 @@
+services:
+  some-postgres:
+    image: postgres:16
+    container_name: some-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - some_postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${POSTGRES_USER} -d ${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+    networks:
+      - some-net
+
+  some-directus:
+    image: directus/directus:latest
+    container_name: some-directus
+    restart: unless-stopped
+    depends_on:
+      some-postgres:
+        condition: service_healthy
+    environment:
+      KEY: ${DIRECTUS_KEY}
+      SECRET: ${DIRECTUS_SECRET}
+      ADMIN_EMAIL: ${DIRECTUS_ADMIN_EMAIL}
+      ADMIN_PASSWORD: ${DIRECTUS_ADMIN_PASSWORD}
+      PUBLIC_URL: ${DIRECTUS_PUBLIC_URL}
+      DB_CLIENT: pg
+      DB_HOST: some-postgres
+      DB_PORT: 5432
+      DB_DATABASE: ${POSTGRES_DB}
+      DB_USER: ${POSTGRES_USER}
+      DB_PASSWORD: ${POSTGRES_PASSWORD}
+      WEBSOCKETS_ENABLED: "true"
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.some-directus.rule=Host(`social.birrd.de`)"
+      - "traefik.http.routers.some-directus.entrypoints=websecure"
+      - "traefik.http.routers.some-directus.tls=true"
+      - "traefik.http.routers.some-directus.tls.certresolver=mytlschallenge"
+      - "traefik.http.services.some-directus.loadbalancer.server.port=8055"
+    networks:
+      - some-net
+      - traefik-net
+
+volumes:
+  some_postgres_data:
+
+networks:
+  some-net:
+    driver: bridge
+  traefik-net:
+    external: true
+    name: birrd-stack_default
