@@ -1,0 +1,253 @@
+{
+  "updatedAt": "2026-03-29T15:13:34.009Z",
+  "createdAt": "2026-03-29T15:11:43.944Z",
+  "id": "QsIThtzFAZKjX8pB",
+  "name": "03-platform-targets-to-publish-log-simulator-noenv-v8",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "ebc255fc-b07f-4f49-ba11-67f6431281dc",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -944,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "mode": "raw",
+        "jsonOutput": "{\n  \"base_url\": \"https://social.birrd.de\",\n  \"token\": \"PASTE_DIRECTUS_STATIC_TOKEN_HERE\"\n}",
+        "options": {}
+      },
+      "id": "f9ea1996-e27d-401e-8682-7eba22209f83",
+      "name": "Config",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -736,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "url": "={{ $('Config').first().json.base_url + '/items/platform_targets' }}",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,content_item_id,platform,status,scheduled_at"
+            },
+            {
+              "name": "sort",
+              "value": "-date_created"
+            },
+            {
+              "name": "limit",
+              "value": "100"
+            },
+            {
+              "name": "filter[status][_eq]",
+              "value": "pending"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{ 'Bearer ' + $('Config').first().json.token }}"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "1a0fac3c-ed5f-415a-8d08-204cfd912e2e",
+      "name": "Get pending platform_targets",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -496,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = Array.isArray($json.data) ? $json.data : [];\nconst now = new Date();\nconst item = rows.find(row => row.status === 'pending' && (!row.scheduled_at || new Date(row.scheduled_at) <= now));\nif (!item) return [];\nconst executedAt = new Date().toISOString();\nconst simulatedId = `sim-${item.platform}-${item.id}-${Date.now()}`;\nconst simulatedUrl = `https://example.local/${item.platform}/${item.id}`;\nreturn [{\n  json: {\n    target_id: item.id,\n    content_item_id: item.content_item_id,\n    platform: item.platform,\n    publish_status: 'success',\n    request_payload_ref: JSON.stringify({\n      mode: 'simulated',\n      source: 'n8n',\n      platform_target_id: item.id,\n      content_item_id: item.content_item_id,\n      platform: item.platform\n    }),\n    response_payload_ref: JSON.stringify({\n      simulated: true,\n      status: 'published',\n      platform_post_id: simulatedId,\n      platform_post_url: simulatedUrl\n    }),\n    published_post_id: simulatedId,\n    published_url: simulatedUrl,\n    executed_at: executedAt,\n    error_message: null,\n    retry_count: 0,\n    target_status: 'published',\n    target_published_at: executedAt,\n    target_platform_post_id: simulatedId,\n    target_platform_post_url: simulatedUrl,\n    target_error_message: null\n  }\n}];"
+      },
+      "id": "edd93950-78b6-4778-8339-ed3da711ddc0",
+      "name": "Build publish item",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -256,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('Config').first().json.base_url + '/items/publish_logs' }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{ 'Bearer ' + $('Config').first().json.token }}"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={\"platform_target_id\":\"{{$json.target_id}}\",\"content_item_id\":\"{{$json.content_item_id}}\",\"platform\":\"{{$json.platform}}\",\"publish_status\":\"{{$json.publish_status}}\",\"request_payload_ref\":{{$json.request_payload_ref ? JSON.stringify($json.request_payload_ref) : 'null'}},\"response_payload_ref\":{{$json.response_payload_ref ? JSON.stringify($json.response_payload_ref) : 'null'}},\"published_post_id\":\"{{$json.published_post_id}}\",\"published_url\":\"{{$json.published_url}}\",\"executed_at\":\"{{$json.executed_at}}\",\"error_message\":null,\"retry_count\":{{$json.retry_count}}}",
+        "options": {}
+      },
+      "id": "972872ca-eba7-43e4-a163-ea31e9348d73",
+      "name": "Create publish_log",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "PATCH",
+        "url": "={{ $('Config').first().json.base_url + '/items/platform_targets/' + $json.target_id }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "={{ 'Bearer ' + $('Config').first().json.token }}"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "raw",
+        "rawContentType": "application/json",
+        "body": "={\"status\":\"{{$json.target_status}}\",\"published_at\":\"{{$json.target_published_at}}\",\"platform_post_id\":\"{{$json.target_platform_post_id}}\",\"platform_post_url\":\"{{$json.target_platform_post_url}}\",\"error_message\":null}",
+        "options": {}
+      },
+      "id": "39540bf4-9ce7-425a-8ffc-ad482ab516e9",
+      "name": "Update platform_target",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        0,
+        208
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Config": {
+      "main": [
+        [
+          {
+            "node": "Get pending platform_targets",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get pending platform_targets": {
+      "main": [
+        [
+          {
+            "node": "Build publish item",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build publish item": {
+      "main": [
+        [
+          {
+            "node": "Create publish_log",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Update platform_target",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "77d7f279-1878-47c2-bf05-50165c5fe979",
+  "activeVersionId": null,
+  "versionCounter": 4,
+  "triggerCount": 0,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-03-29T15:11:43.946Z",
+      "createdAt": "2026-03-29T15:11:43.946Z",
+      "role": "workflow:owner",
+      "workflowId": "QsIThtzFAZKjX8pB",
+      "projectId": "SMypNp8QH8UOKhW7",
+      "project": {
+        "updatedAt": "2026-02-17T15:59:59.721Z",
+        "createdAt": "2026-02-17T15:57:52.712Z",
+        "id": "SMypNp8QH8UOKhW7",
+        "name": "Max Clee <birrd.eu@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "a93b2852-82ae-4964-abac-2eb244cbb9e2"
+      }
+    }
+  ]
+}

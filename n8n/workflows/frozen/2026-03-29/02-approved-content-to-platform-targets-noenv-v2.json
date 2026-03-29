@@ -1,0 +1,328 @@
+{
+  "updatedAt": "2026-03-29T13:49:34.149Z",
+  "createdAt": "2026-03-29T11:03:18.021Z",
+  "id": "zT97AjasDrqp1iY5",
+  "name": "02-approved-content-to-platform-targets-noenv-v2",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "e31f8007-ab29-44a6-bcc2-534e6623f151",
+      "name": "Manual Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1360,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://social.birrd.de/items/content_items",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,status,primary_platform,content_type,scheduled_at"
+            },
+            {
+              "name": "sort",
+              "value": "-date_updated"
+            },
+            {
+              "name": "limit",
+              "value": "100"
+            },
+            {
+              "name": "filter[status][_eq]",
+              "value": "approved"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "887eb396-6e12-4602-927d-cdad545c59ae",
+      "name": "Get approved content_items",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -1136,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const rows = Array.isArray($json.data) ? $json.data : [];\nreturn rows.filter(row => row.status === 'approved').filter(row => !!row.primary_platform).filter(row => row.content_type !== 'outreach_piece').map(row => ({ json: row }));"
+      },
+      "id": "016c2a08-6547-4491-85b6-6623d873359c",
+      "name": "Filter valid approved rows",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -928,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "924c5665-ee62-4ded-81a0-7f2661839809",
+      "name": "Loop Items",
+      "type": "n8n-nodes-base.splitInBatches",
+      "typeVersion": 3,
+      "position": [
+        -704,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "url": "https://social.birrd.de/items/platform_targets",
+        "sendQuery": true,
+        "queryParameters": {
+          "parameters": [
+            {
+              "name": "fields",
+              "value": "id,content_item_id,platform"
+            },
+            {
+              "name": "limit",
+              "value": "1"
+            },
+            {
+              "name": "filter[content_item_id][_eq]",
+              "value": "={{ $('Loop Items').item.json.id }}"
+            },
+            {
+              "name": "filter[platform][_eq]",
+              "value": "={{ $('Loop Items').item.json.primary_platform }}"
+            }
+          ]
+        },
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "7b50509e-5fff-43b5-ab59-89957ead9d49",
+      "name": "Check existing target",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -464,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "number": [
+            {
+              "value1": "={{ Array.isArray($json.data) ? $json.data.length : 0 }}",
+              "operation": "equal",
+              "value2": 0
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "c5ef5086-9354-4333-90f8-2d97352df25e",
+      "name": "No existing target?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.2,
+      "position": [
+        -224,
+        112
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const item = $('Loop Items').item.json;\nconst map = { post: 'feed_post', reel: 'reel', story: 'story', tiktok_video: 'tiktok_post', carousel: 'feed_post' };\nconst format = map[item.content_type] || 'feed_post';\nreturn [{ json: { content_item_id: item.id, platform: item.primary_platform, account_ref: '', format, status: 'pending', scheduled_at: item.scheduled_at || null, published_at: null, platform_post_id: null, platform_post_url: null, error_message: null } }];"
+      },
+      "id": "3a556f9e-f1e4-4df8-ac25-db9dedfeb7ee",
+      "name": "Build target payload",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        0,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://social.birrd.de/items/platform_targets",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+            },
+            {
+              "name": "Accept",
+              "value": "application/json"
+            },
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {}
+          ]
+        },
+        "options": {}
+      },
+      "id": "3d4e39a5-b0e9-4a54-86aa-5f7bd977e165",
+      "name": "Create platform_target",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        224,
+        0
+      ]
+    }
+  ],
+  "connections": {
+    "Manual Trigger": {
+      "main": [
+        [
+          {
+            "node": "Get approved content_items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get approved content_items": {
+      "main": [
+        [
+          {
+            "node": "Filter valid approved rows",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Filter valid approved rows": {
+      "main": [
+        [
+          {
+            "node": "Loop Items",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Loop Items": {
+      "main": [
+        [
+          {
+            "node": "Check existing target",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Check existing target": {
+      "main": [
+        [
+          {
+            "node": "No existing target?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "No existing target?": {
+      "main": [
+        [
+          {
+            "node": "Build target payload",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build target payload": {
+      "main": [
+        [
+          {
+            "node": "Create platform_target",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "2d5efc5e-e145-4d59-9074-4ca6c50469e4",
+  "activeVersionId": null,
+  "versionCounter": 13,
+  "triggerCount": 0,
+  "tags": [],
+  "shared": [
+    {
+      "updatedAt": "2026-03-29T11:03:18.025Z",
+      "createdAt": "2026-03-29T11:03:18.025Z",
+      "role": "workflow:owner",
+      "workflowId": "zT97AjasDrqp1iY5",
+      "projectId": "SMypNp8QH8UOKhW7",
+      "project": {
+        "updatedAt": "2026-02-17T15:59:59.721Z",
+        "createdAt": "2026-02-17T15:57:52.712Z",
+        "id": "SMypNp8QH8UOKhW7",
+        "name": "Max Clee <birrd.eu@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "a93b2852-82ae-4964-abac-2eb244cbb9e2"
+      }
+    }
+  ]
+}
