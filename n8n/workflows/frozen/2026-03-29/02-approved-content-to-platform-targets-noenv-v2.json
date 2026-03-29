@@ -47,7 +47,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+              "value": "Bearer PASTE_DIRECTUS_STATIC_TOKEN_HERE"
             },
             {
               "name": "Accept",
@@ -121,7 +121,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+              "value": "Bearer PASTE_DIRECTUS_STATIC_TOKEN_HERE"
             },
             {
               "name": "Accept",
@@ -184,7 +184,7 @@
           "parameters": [
             {
               "name": "Authorization",
-              "value": "Bearer 3FGE6Iglo4vLIPztadX0Dobj6btbwCjv"
+              "value": "Bearer PASTE_DIRECTUS_STATIC_TOKEN_HERE"
             },
             {
               "name": "Accept",
