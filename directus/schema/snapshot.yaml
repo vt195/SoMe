@@ -2,2046 +2,6031 @@ version: 1
 directus: 11.17.0
 vendor: postgres
 collections:
-  - collection: assets
-    meta:
-      accountability: all
-      archive_app_filter: true
-      archive_field: null
-      archive_value: null
-      collapse: open
-      collection: assets
-      color: null
-      display_template: null
-      group: null
-      hidden: false
-      icon: null
-      item_duplication_fields: null
-      note: null
-      preview_url: null
-      singleton: false
-      sort: null
-      sort_field: null
-      translations: null
-      unarchive_value: null
-      versioning: false
-    schema:
-      name: assets
-  - collection: content_items
-    meta:
-      accountability: all
-      archive_app_filter: true
-      archive_field: null
-      archive_value: null
-      collapse: open
-      collection: content_items
-      color: null
-      display_template: null
-      group: null
-      hidden: false
-      icon: null
-      item_duplication_fields: null
-      note: null
-      preview_url: null
-      singleton: false
-      sort: null
-      sort_field: null
-      translations: null
-      unarchive_value: null
-      versioning: false
-    schema:
-      name: content_items
-  - collection: platform_targets
-    meta:
-      accountability: all
-      archive_app_filter: true
-      archive_field: null
-      archive_value: null
-      collapse: open
-      collection: platform_targets
-      color: null
-      display_template: null
-      group: null
-      hidden: false
-      icon: null
-      item_duplication_fields: null
-      note: null
-      preview_url: null
-      singleton: false
-      sort: null
-      sort_field: null
-      translations: null
-      unarchive_value: null
-      versioning: false
-    schema:
-      name: platform_targets
+- collection: assets
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: assets
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: assets
+- collection: content_items
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: content_items
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: content_items
+- collection: platform_targets
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: platform_targets
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: platform_targets
+- collection: approval_actions
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: approval_actions
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: approval_actions
+- collection: publish_logs
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: publish_logs
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: publish_logs
+- collection: outreach_tasks
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: outreach_tasks
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: outreach_tasks
+- collection: analytics_snapshots
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: analytics_snapshots
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: analytics_snapshots
+- collection: campaigns
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: campaigns
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: campaigns
+- collection: prompt_templates
+  meta:
+    accountability: all
+    archive_app_filter: true
+    archive_field: null
+    archive_value: null
+    collapse: open
+    collection: prompt_templates
+    color: null
+    display_template: null
+    group: null
+    hidden: false
+    icon: null
+    item_duplication_fields: null
+    note: null
+    preview_url: null
+    singleton: false
+    sort: null
+    sort_field: null
+    translations: null
+    unarchive_value: null
+    versioning: false
+  schema:
+    name: prompt_templates
 fields:
-  - collection: assets
+- collection: assets
+  field: id
+  type: uuid
+  meta:
+    collection: assets
+    conditions: null
+    display: null
+    display_options: null
     field: id
-    type: uuid
-    meta:
-      collection: assets
-      conditions: null
-      display: null
-      display_options: null
-      field: id
-      group: null
-      hidden: true
-      interface: input
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 1
-      special:
-        - uuid
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: id
-      table: assets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: false
-      is_unique: true
-      is_indexed: false
-      is_primary_key: true
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: assets
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: assets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: assets
+  field: user_created
+  type: uuid
+  meta:
+    collection: assets
+    conditions: null
+    display: user
+    display_options: null
     field: user_created
-    type: uuid
-    meta:
-      collection: assets
-      conditions: null
-      display: user
-      display_options: null
-      field: user_created
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 2
-      special:
-        - user-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_created
-      table: assets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-  - collection: assets
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: assets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: assets
+  field: date_created
+  type: timestamp
+  meta:
+    collection: assets
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_created
-    type: timestamp
-    meta:
-      collection: assets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_created
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 3
-      special:
-        - date-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_created
-      table: assets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: assets
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: assets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: assets
+  field: user_updated
+  type: uuid
+  meta:
+    collection: assets
+    conditions: null
+    display: user
+    display_options: null
     field: user_updated
-    type: uuid
-    meta:
-      collection: assets
-      conditions: null
-      display: user
-      display_options: null
-      field: user_updated
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 4
-      special:
-        - user-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_updated
-      table: assets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-  - collection: assets
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: assets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: assets
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: assets
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_updated
-    type: timestamp
-    meta:
-      collection: assets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_updated
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 5
-      special:
-        - date-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_updated
-      table: assets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: assets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: id
+  type: uuid
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: id
-    type: uuid
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: id
-      group: null
-      hidden: true
-      interface: input
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 1
-      special:
-        - uuid
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: id
-      table: content_items
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: false
-      is_unique: true
-      is_indexed: false
-      is_primary_key: true
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: content_items
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: user_created
+  type: uuid
+  meta:
+    collection: content_items
+    conditions: null
+    display: user
+    display_options: null
     field: user_created
-    type: uuid
-    meta:
-      collection: content_items
-      conditions: null
-      display: user
-      display_options: null
-      field: user_created
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 2
-      special:
-        - user-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_created
-      table: content_items
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: content_items
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: content_items
+  field: date_created
+  type: timestamp
+  meta:
+    collection: content_items
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_created
-    type: timestamp
-    meta:
-      collection: content_items
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_created
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 3
-      special:
-        - date-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_created
-      table: content_items
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: content_items
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: user_updated
+  type: uuid
+  meta:
+    collection: content_items
+    conditions: null
+    display: user
+    display_options: null
     field: user_updated
-    type: uuid
-    meta:
-      collection: content_items
-      conditions: null
-      display: user
-      display_options: null
-      field: user_updated
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 4
-      special:
-        - user-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_updated
-      table: content_items
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: content_items
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: content_items
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: content_items
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_updated
-    type: timestamp
-    meta:
-      collection: content_items
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_updated
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 5
-      special:
-        - date-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_updated
-      table: content_items
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: content_items
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: title
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: title
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: title
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 6
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: title
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: title
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: content_type
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: content_type
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: content_type
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: post
-            value: post
-          - text: reel
-            value: reel
-          - text: story
-            value: story
-          - text: tiktok_video
-            value: tiktok_video
-          - text: carousel
-            value: carousel
-          - text: outreach_piece
-            value: outreach_piece
-      readonly: false
-      required: false
-      searchable: true
-      sort: 7
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: content_type
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: post
+        value: post
+      - text: reel
+        value: reel
+      - text: story
+        value: story
+      - text: tiktok_video
+        value: tiktok_video
+      - text: carousel
+        value: carousel
+      - text: outreach_piece
+        value: outreach_piece
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: content_type
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: status
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: status
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: status
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: idea
-            value: idea
-          - text: draft
-            value: draft
-          - text: ready_for_approval
-            value: ready_for_approval
-          - text: approved
-            value: approved
-          - text: scheduled
-            value: scheduled
-          - text: published
-            value: published
-          - text: needs_rework
-            value: needs_rework
-          - text: rejected
-            value: rejected
-          - text: failed
-            value: failed
-      readonly: false
-      required: false
-      searchable: true
-      sort: 8
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: status
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: idea
+        value: idea
+      - text: draft
+        value: draft
+      - text: ready_for_approval
+        value: ready_for_approval
+      - text: approved
+        value: approved
+      - text: scheduled
+        value: scheduled
+      - text: published
+        value: published
+      - text: needs_rework
+        value: needs_rework
+      - text: rejected
+        value: rejected
+      - text: failed
+        value: failed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: status
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: brief
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: brief
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: brief
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 9
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: brief
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: brief
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: final_caption
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: final_caption
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: final_caption
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 10
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: final_caption
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: final_caption
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: primary_platform
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: primary_platform
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: primary_platform
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: instagram
-            value: instagram
-          - text: facebook
-            value: facebook
-          - text: tiktok
-            value: tiktok
-      readonly: false
-      required: false
-      searchable: true
-      sort: 11
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: primary_platform
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: primary_platform
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: objective
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: objective
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: objective
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: awareness
-            value: awareness
-          - text: engagement
-            value: engagement
-          - text: education
-            value: education
-          - text: conversion
-            value: conversion
-          - text: community
-            value: community
-      readonly: false
-      required: false
-      searchable: true
-      sort: 12
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: objective
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: awareness
+        value: awareness
+      - text: engagement
+        value: engagement
+      - text: education
+        value: education
+      - text: conversion
+        value: conversion
+      - text: community
+        value: community
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: objective
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: pillar
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: pillar
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: pillar
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: brand
-            value: brand
-          - text: product
-            value: product
-          - text: entertainment
-            value: entertainment
-          - text: education
-            value: education
-          - text: social_proof
-            value: social_proof
-          - text: community
-            value: community
-      readonly: false
-      required: false
-      searchable: true
-      sort: 13
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: pillar
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: brand
+        value: brand
+      - text: product
+        value: product
+      - text: entertainment
+        value: entertainment
+      - text: education
+        value: education
+      - text: social_proof
+        value: social_proof
+      - text: community
+        value: community
+    readonly: false
+    required: false
+    searchable: true
+    sort: 13
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: pillar
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: hook
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: hook
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: hook
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 14
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: hook
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 14
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: hook
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: caption_draft
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: caption_draft
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: caption_draft
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 15
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: caption_draft
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 15
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: caption_draft
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: cta
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: cta
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: cta
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 16
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: cta
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 16
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: cta
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: language
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: language
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: language
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: de
-            value: de
-          - text: en
-            value: en
-          - text: es
-            value: es
-      readonly: false
-      required: false
-      searchable: true
-      sort: 17
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: language
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: de
+        value: de
+      - text: en
+        value: en
+      - text: es
+        value: es
+      - text: zh
+        value: zh
+      - text: tl
+        value: tl
+    readonly: false
+    required: false
+    searchable: true
+    sort: 17
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: language
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: scheduled_at
+  type: dateTime
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: scheduled_at
-    type: dateTime
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: scheduled_at
-      group: null
-      hidden: false
-      interface: datetime
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 18
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: scheduled_at
-      table: content_items
-      data_type: timestamp without time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 18
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: scheduled_at
+    table: content_items
+    data_type: timestamp without time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: published_at
+  type: dateTime
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: published_at
-    type: dateTime
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: published_at
-      group: null
-      hidden: false
-      interface: datetime
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 19
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: published_at
-      table: content_items
-      data_type: timestamp without time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 19
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: published_at
+    table: content_items
+    data_type: timestamp without time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: external_post_url
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: external_post_url
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: external_post_url
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 20
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: external_post_url
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 20
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: external_post_url
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: performance_label
+  type: string
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: performance_label
-    type: string
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: performance_label
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: unknown
-            value: unknown
-          - text: winner
-            value: winner
-          - text: average
-            value: average
-          - text: weak
-            value: weak
-      readonly: false
-      required: false
-      searchable: true
-      sort: 21
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: performance_label
-      table: content_items
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: content_items
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: unknown
+        value: unknown
+      - text: winner
+        value: winner
+      - text: average
+        value: average
+      - text: weak
+        value: weak
+    readonly: false
+    required: false
+    searchable: true
+    sort: 21
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: performance_label
+    table: content_items
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: content_items
+  field: notes_internal
+  type: text
+  meta:
+    collection: content_items
+    conditions: null
+    display: null
+    display_options: null
     field: notes_internal
-    type: text
-    meta:
-      collection: content_items
-      conditions: null
-      display: null
-      display_options: null
-      field: notes_internal
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 22
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: notes_internal
-      table: content_items
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 22
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: notes_internal
+    table: content_items
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: id
+  type: uuid
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: id
-    type: uuid
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: id
-      group: null
-      hidden: true
-      interface: input
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 1
-      special:
-        - uuid
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: id
-      table: platform_targets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: false
-      is_unique: true
-      is_indexed: false
-      is_primary_key: true
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: platform_targets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: user_created
+  type: uuid
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: user
+    display_options: null
     field: user_created
-    type: uuid
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: user
-      display_options: null
-      field: user_created
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 2
-      special:
-        - user-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_created
-      table: platform_targets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-
-  - collection: platform_targets
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: platform_targets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: platform_targets
+  field: date_created
+  type: timestamp
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_created
-    type: timestamp
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_created
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 3
-      special:
-        - date-created
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_created
-      table: platform_targets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: platform_targets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: user_updated
+  type: uuid
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: user
+    display_options: null
     field: user_updated
-    type: uuid
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: user
-      display_options: null
-      field: user_updated
-      group: null
-      hidden: true
-      interface: select-dropdown-m2o
-      note: null
-      options:
-        template: '{{avatar}} {{first_name}} {{last_name}}'
-      readonly: true
-      required: false
-      searchable: true
-      sort: 4
-      special:
-        - user-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: user_updated
-      table: platform_targets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: directus_users
-      foreign_key_column: id
-
-  - collection: platform_targets
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: platform_targets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: platform_targets
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
     field: date_updated
-    type: timestamp
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: date_updated
-      group: null
-      hidden: true
-      interface: datetime
-      note: null
-      options: null
-      readonly: true
-      required: false
-      searchable: true
-      sort: 5
-      special:
-        - date-updated
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: date_updated
-      table: platform_targets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: platform_targets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: content_item_id
+  type: uuid
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: content_item_id
-    type: uuid
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: content_item_id
-      group: null
-      hidden: false
-      interface: input
-      note: Temporary plain UUID. Relation to content_items will be added later.
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 6
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: content_item_id
-      table: platform_targets
-      data_type: uuid
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to content_items will be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: content_item_id
+    table: platform_targets
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: platform
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: platform
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: platform
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: instagram
-            value: instagram
-          - text: facebook
-            value: facebook
-          - text: tiktok
-            value: tiktok
-      readonly: false
-      required: false
-      searchable: true
-      sort: 7
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: platform
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: platform
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: account_ref
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: account_ref
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: account_ref
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 8
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: account_ref
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: account_ref
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: format
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: format
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: format
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: feed_post
-            value: feed_post
-          - text: reel
-            value: reel
-          - text: story
-            value: story
-          - text: tiktok_post
-            value: tiktok_post
-      readonly: false
-      required: false
-      searchable: true
-      sort: 9
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: format
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: feed_post
+        value: feed_post
+      - text: reel
+        value: reel
+      - text: story
+        value: story
+      - text: tiktok_post
+        value: tiktok_post
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: format
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: status
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: status
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: status
-      group: null
-      hidden: false
-      interface: select-dropdown
-      note: null
-      options:
-        choices:
-          - text: pending
-            value: pending
-          - text: ready
-            value: ready
-          - text: published
-            value: published
-          - text: failed
-            value: failed
-      readonly: false
-      required: false
-      searchable: true
-      sort: 10
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: status
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: pending
+        value: pending
+      - text: ready
+        value: ready
+      - text: published
+        value: published
+      - text: failed
+        value: failed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: status
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: scheduled_at
+  type: timestamp
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: scheduled_at
-    type: timestamp
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: scheduled_at
-      group: null
-      hidden: false
-      interface: datetime
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 11
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: scheduled_at
-      table: platform_targets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: scheduled_at
+    table: platform_targets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: published_at
+  type: timestamp
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: published_at
-    type: timestamp
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: datetime
-      display_options:
-        relative: true
-      field: published_at
-      group: null
-      hidden: false
-      interface: datetime
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 12
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: published_at
-      table: platform_targets
-      data_type: timestamp with time zone
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: published_at
+    table: platform_targets
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: platform_post_id
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: platform_post_id
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: platform_post_id
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 13
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: half
-    schema:
-      name: platform_post_id
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 13
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: platform_post_id
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: platform_post_url
+  type: string
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: platform_post_url
-    type: string
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: platform_post_url
-      group: null
-      hidden: false
-      interface: input
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 14
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: platform_post_url
-      table: platform_targets
-      data_type: character varying
-      default_value: null
-      max_length: 255
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-  - collection: platform_targets
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 14
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: platform_post_url
+    table: platform_targets
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: platform_targets
+  field: error_message
+  type: text
+  meta:
+    collection: platform_targets
+    conditions: null
+    display: null
+    display_options: null
     field: error_message
-    type: text
-    meta:
-      collection: platform_targets
-      conditions: null
-      display: null
-      display_options: null
-      field: error_message
-      group: null
-      hidden: false
-      interface: input-multiline
-      note: null
-      options: null
-      readonly: false
-      required: false
-      searchable: true
-      sort: 15
-      special: null
-      translations: null
-      validation: null
-      validation_message: null
-      width: full
-    schema:
-      name: error_message
-      table: platform_targets
-      data_type: text
-      default_value: null
-      max_length: null
-      numeric_precision: null
-      numeric_scale: null
-      is_nullable: true
-      is_unique: false
-      is_indexed: false
-      is_primary_key: false
-      is_generated: false
-      generation_expression: null
-      has_auto_increment: false
-      foreign_key_table: null
-      foreign_key_column: null
-
-
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 15
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: error_message
+    table: platform_targets
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: id
+  type: uuid
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: approval_actions
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: user_created
+  type: uuid
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: approval_actions
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: approval_actions
+  field: date_created
+  type: timestamp
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: approval_actions
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: user_updated
+  type: uuid
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: approval_actions
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: approval_actions
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: approval_actions
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: content_item_id
+  type: uuid
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: content_item_id
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to content_items will be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: content_item_id
+    table: approval_actions
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: action_type
+  type: string
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: action_type
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: submitted_for_approval
+        value: submitted_for_approval
+      - text: approved
+        value: approved
+      - text: needs_rework
+        value: needs_rework
+      - text: rejected
+        value: rejected
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: action_type
+    table: approval_actions
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: action_by_user_id
+  type: uuid
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: action_by_user_id
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to directus_users can be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: action_by_user_id
+    table: approval_actions
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: action_at
+  type: timestamp
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: action_at
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: action_at
+    table: approval_actions
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: comment
+  type: text
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: comment
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: comment
+    table: approval_actions
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: previous_status
+  type: string
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: previous_status
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: previous_status
+    table: approval_actions
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: approval_actions
+  field: new_status
+  type: string
+  meta:
+    collection: approval_actions
+    conditions: null
+    display: null
+    display_options: null
+    field: new_status
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: new_status
+    table: approval_actions
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: id
+  type: uuid
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: publish_logs
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: user_created
+  type: uuid
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: publish_logs
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: publish_logs
+  field: date_created
+  type: timestamp
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: publish_logs
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: user_updated
+  type: uuid
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: publish_logs
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: publish_logs
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: publish_logs
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: content_item_id
+  type: uuid
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: content_item_id
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to content_items will be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: content_item_id
+    table: publish_logs
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: platform_target_id
+  type: uuid
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: platform_target_id
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to platform_targets will be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: platform_target_id
+    table: publish_logs
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: platform
+  type: string
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: platform
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: platform
+    table: publish_logs
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: publish_status
+  type: string
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: publish_status
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: queued
+        value: queued
+      - text: processing
+        value: processing
+      - text: success
+        value: success
+      - text: failed
+        value: failed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: publish_status
+    table: publish_logs
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: request_payload_ref
+  type: text
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: request_payload_ref
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: request_payload_ref
+    table: publish_logs
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: response_payload_ref
+  type: text
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: response_payload_ref
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: response_payload_ref
+    table: publish_logs
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: published_post_id
+  type: string
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: published_post_id
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: published_post_id
+    table: publish_logs
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: published_url
+  type: string
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: published_url
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 13
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: published_url
+    table: publish_logs
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: executed_at
+  type: timestamp
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: executed_at
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 14
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: executed_at
+    table: publish_logs
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: error_message
+  type: text
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: null
+    display_options: null
+    field: error_message
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 15
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: error_message
+    table: publish_logs
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: publish_logs
+  field: retry_count
+  type: integer
+  meta:
+    collection: publish_logs
+    conditions: null
+    display: raw
+    display_options: null
+    field: retry_count
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 16
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: retry_count
+    table: publish_logs
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: id
+  type: uuid
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: outreach_tasks
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: user_created
+  type: uuid
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: outreach_tasks
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: outreach_tasks
+  field: date_created
+  type: timestamp
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: outreach_tasks
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: user_updated
+  type: uuid
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: outreach_tasks
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: outreach_tasks
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: outreach_tasks
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: task_type
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: task_type
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: comment_action
+        value: comment_action
+      - text: dm_action
+        value: dm_action
+      - text: engagement_action
+        value: engagement_action
+      - text: community_seed
+        value: community_seed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: task_type
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: channel
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: channel
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: channel
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: target_ref
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: target_ref
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: target_ref
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: scenario
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: scenario
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: scenario
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: message_template_ref
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: message_template_ref
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain string/uuid reference. Relation can be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: message_template_ref
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: status
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: status
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: queued
+        value: queued
+      - text: processing
+        value: processing
+      - text: sent
+        value: sent
+      - text: completed
+        value: completed
+      - text: review_required
+        value: review_required
+      - text: failed
+        value: failed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: status
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: priority
+  type: string
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: priority
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: low
+        value: low
+      - text: normal
+        value: normal
+      - text: high
+        value: high
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: priority
+    table: outreach_tasks
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: scheduled_at
+  type: timestamp
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: scheduled_at
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 13
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: scheduled_at
+    table: outreach_tasks
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: executed_at
+  type: timestamp
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: executed_at
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 14
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: executed_at
+    table: outreach_tasks
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: result_summary
+  type: text
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: result_summary
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 15
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: result_summary
+    table: outreach_tasks
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: outreach_tasks
+  field: review_notes
+  type: text
+  meta:
+    collection: outreach_tasks
+    conditions: null
+    display: null
+    display_options: null
+    field: review_notes
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 16
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: review_notes
+    table: outreach_tasks
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: id
+  type: uuid
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: analytics_snapshots
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: user_created
+  type: uuid
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: analytics_snapshots
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: analytics_snapshots
+  field: date_created
+  type: timestamp
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: analytics_snapshots
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: user_updated
+  type: uuid
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: analytics_snapshots
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: analytics_snapshots
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: analytics_snapshots
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: content_item_id
+  type: uuid
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: null
+    display_options: null
+    field: content_item_id
+    group: null
+    hidden: false
+    interface: input
+    note: Temporary plain UUID. Relation to content_items will be added later.
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: content_item_id
+    table: analytics_snapshots
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: platform
+  type: string
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: null
+    display_options: null
+    field: platform
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: platform
+    table: analytics_snapshots
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: snapshot_date
+  type: date
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: datetime
+    display_options: null
+    field: snapshot_date
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: snapshot_date
+    table: analytics_snapshots
+    data_type: date
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: impressions
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: impressions
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: impressions
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: reach
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: reach
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: reach
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: engagement
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: engagement
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: engagement
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: likes
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: likes
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: likes
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: comments
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: comments
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 13
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: comments
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: shares
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: shares
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 14
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: shares
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: saves
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: saves
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 15
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: saves
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: clicks
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: clicks
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 16
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: third
+  schema:
+    name: clicks
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: watch_time_seconds
+  type: integer
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: watch_time_seconds
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 17
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: watch_time_seconds
+    table: analytics_snapshots
+    data_type: integer
+    default_value: null
+    max_length: null
+    numeric_precision: 32
+    numeric_scale: 0
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: analytics_snapshots
+  field: completion_rate
+  type: float
+  meta:
+    collection: analytics_snapshots
+    conditions: null
+    display: raw
+    display_options: null
+    field: completion_rate
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 18
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: completion_rate
+    table: analytics_snapshots
+    data_type: real
+    default_value: null
+    max_length: null
+    numeric_precision: 24
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: id
+  type: uuid
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: campaigns
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: user_created
+  type: uuid
+  meta:
+    collection: campaigns
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: campaigns
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: campaigns
+  field: date_created
+  type: timestamp
+  meta:
+    collection: campaigns
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: campaigns
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: user_updated
+  type: uuid
+  meta:
+    collection: campaigns
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: campaigns
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: campaigns
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: campaigns
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: campaigns
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: name
+  type: string
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: name
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: name
+    table: campaigns
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: code
+  type: string
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: code
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: code
+    table: campaigns
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: status
+  type: string
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: status
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: planned
+        value: planned
+      - text: active
+        value: active
+      - text: paused
+        value: paused
+      - text: completed
+        value: completed
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: status
+    table: campaigns
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: objective
+  type: text
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: objective
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: objective
+    table: campaigns
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: start_date
+  type: date
+  meta:
+    collection: campaigns
+    conditions: null
+    display: datetime
+    display_options: null
+    field: start_date
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: start_date
+    table: campaigns
+    data_type: date
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: end_date
+  type: date
+  meta:
+    collection: campaigns
+    conditions: null
+    display: datetime
+    display_options: null
+    field: end_date
+    group: null
+    hidden: false
+    interface: datetime
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: end_date
+    table: campaigns
+    data_type: date
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: campaigns
+  field: notes
+  type: text
+  meta:
+    collection: campaigns
+    conditions: null
+    display: null
+    display_options: null
+    field: notes
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: notes
+    table: campaigns
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: id
+  type: uuid
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: id
+    group: null
+    hidden: true
+    interface: input
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 1
+    special:
+    - uuid
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: id
+    table: prompt_templates
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: false
+    is_unique: true
+    is_indexed: false
+    is_primary_key: true
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: user_created
+  type: uuid
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: user
+    display_options: null
+    field: user_created
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 2
+    special:
+    - user-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_created
+    table: prompt_templates
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: prompt_templates
+  field: date_created
+  type: timestamp
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_created
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 3
+    special:
+    - date-created
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_created
+    table: prompt_templates
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: user_updated
+  type: uuid
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: user
+    display_options: null
+    field: user_updated
+    group: null
+    hidden: true
+    interface: select-dropdown-m2o
+    note: null
+    options:
+      template: '{{avatar}} {{first_name}} {{last_name}}'
+    readonly: true
+    required: false
+    searchable: true
+    sort: 4
+    special:
+    - user-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: user_updated
+    table: prompt_templates
+    data_type: uuid
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: directus_users
+    foreign_key_column: id
+- collection: prompt_templates
+  field: date_updated
+  type: timestamp
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: datetime
+    display_options:
+      relative: true
+    field: date_updated
+    group: null
+    hidden: true
+    interface: datetime
+    note: null
+    options: null
+    readonly: true
+    required: false
+    searchable: true
+    sort: 5
+    special:
+    - date-updated
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: date_updated
+    table: prompt_templates
+    data_type: timestamp with time zone
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: name
+  type: string
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: name
+    group: null
+    hidden: false
+    interface: input
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 6
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: name
+    table: prompt_templates
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: template_type
+  type: string
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: template_type
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: caption
+        value: caption
+      - text: hook
+        value: hook
+      - text: reply
+        value: reply
+      - text: outreach
+        value: outreach
+      - text: classification
+        value: classification
+    readonly: false
+    required: false
+    searchable: true
+    sort: 7
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: template_type
+    table: prompt_templates
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: channel
+  type: string
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: channel
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: generic
+        value: generic
+      - text: instagram
+        value: instagram
+      - text: facebook
+        value: facebook
+      - text: tiktok
+        value: tiktok
+    readonly: false
+    required: false
+    searchable: true
+    sort: 8
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: channel
+    table: prompt_templates
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: language
+  type: string
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: language
+    group: null
+    hidden: false
+    interface: select-dropdown
+    note: null
+    options:
+      choices:
+      - text: de
+        value: de
+      - text: en
+        value: en
+      - text: es
+        value: es
+      - text: zh
+        value: zh
+      - text: tl
+        value: tl
+    readonly: false
+    required: false
+    searchable: true
+    sort: 9
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: language
+    table: prompt_templates
+    data_type: character varying
+    default_value: null
+    max_length: 255
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: body
+  type: text
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: body
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 10
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: body
+    table: prompt_templates
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: is_active
+  type: boolean
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: boolean
+    display_options: null
+    field: is_active
+    group: null
+    hidden: false
+    interface: boolean
+    note: null
+    options:
+      label: Enabled
+    readonly: false
+    required: false
+    searchable: true
+    sort: 11
+    special:
+    - cast-boolean
+    translations: null
+    validation: null
+    validation_message: null
+    width: half
+  schema:
+    name: is_active
+    table: prompt_templates
+    data_type: boolean
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
+- collection: prompt_templates
+  field: notes
+  type: text
+  meta:
+    collection: prompt_templates
+    conditions: null
+    display: null
+    display_options: null
+    field: notes
+    group: null
+    hidden: false
+    interface: input-multiline
+    note: null
+    options: null
+    readonly: false
+    required: false
+    searchable: true
+    sort: 12
+    special: null
+    translations: null
+    validation: null
+    validation_message: null
+    width: full
+  schema:
+    name: notes
+    table: prompt_templates
+    data_type: text
+    default_value: null
+    max_length: null
+    numeric_precision: null
+    numeric_scale: null
+    is_nullable: true
+    is_unique: false
+    is_indexed: false
+    is_primary_key: false
+    is_generated: false
+    generation_expression: null
+    has_auto_increment: false
+    foreign_key_table: null
+    foreign_key_column: null
 systemFields:
-  - collection: directus_activity
-    field: timestamp
-    schema:
-      is_indexed: true
-  - collection: directus_revisions
-    field: activity
-    schema:
-      is_indexed: true
-  - collection: directus_revisions
-    field: parent
-    schema:
-      is_indexed: true
+- collection: directus_activity
+  field: timestamp
+  schema:
+    is_indexed: true
+- collection: directus_revisions
+  field: activity
+  schema:
+    is_indexed: true
+- collection: directus_revisions
+  field: parent
+  schema:
+    is_indexed: true
 relations:
-  - collection: assets
-    field: user_updated
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: assets
-      many_field: user_updated
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: assets
-      column: user_updated
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: assets_user_updated_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: assets
-    field: user_created
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: assets
-      many_field: user_created
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: assets
-      column: user_created
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: assets_user_created_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: content_items
-    field: user_created
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: content_items
-      many_field: user_created
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: content_items
-      column: user_created
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: content_items_user_created_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: content_items
-    field: user_updated
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: content_items
-      many_field: user_updated
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: content_items
-      column: user_updated
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: content_items_user_updated_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-  - collection: platform_targets
-    field: user_created
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: platform_targets
-      many_field: user_created
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: platform_targets
-      column: user_created
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: platform_targets_user_created_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
-
-  - collection: platform_targets
-    field: user_updated
-    related_collection: directus_users
-    meta:
-      junction_field: null
-      many_collection: platform_targets
-      many_field: user_updated
-      one_allowed_collections: null
-      one_collection: directus_users
-      one_collection_field: null
-      one_deselect_action: nullify
-      one_field: null
-      sort_field: null
-    schema:
-      table: platform_targets
-      column: user_updated
-      foreign_key_table: directus_users
-      foreign_key_column: id
-      constraint_name: platform_targets_user_updated_foreign
-      on_update: NO ACTION
-      on_delete: NO ACTION
+- collection: assets
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: assets
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: assets
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: assets_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: assets
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: assets
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: assets
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: assets_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: content_items
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: content_items
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: content_items
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: content_items_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: content_items
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: content_items
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: content_items
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: content_items_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: platform_targets
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: platform_targets
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: platform_targets
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: platform_targets_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: platform_targets
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: platform_targets
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: platform_targets
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: platform_targets_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: approval_actions
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: approval_actions
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: approval_actions
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: approval_actions_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: approval_actions
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: approval_actions
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: approval_actions
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: approval_actions_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: publish_logs
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: publish_logs
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: publish_logs
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: publish_logs_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: publish_logs
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: publish_logs
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: publish_logs
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: publish_logs_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: outreach_tasks
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: outreach_tasks
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: outreach_tasks
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: outreach_tasks_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: outreach_tasks
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: outreach_tasks
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: outreach_tasks
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: outreach_tasks_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: analytics_snapshots
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: analytics_snapshots
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: analytics_snapshots
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: analytics_snapshots_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: analytics_snapshots
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: analytics_snapshots
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: analytics_snapshots
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: analytics_snapshots_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: campaigns
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: campaigns
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: campaigns
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: campaigns_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: campaigns
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: campaigns
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: campaigns
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: campaigns_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: prompt_templates
+  field: user_created
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: prompt_templates
+    many_field: user_created
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: prompt_templates
+    column: user_created
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: prompt_templates_user_created_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
+- collection: prompt_templates
+  field: user_updated
+  related_collection: directus_users
+  meta:
+    junction_field: null
+    many_collection: prompt_templates
+    many_field: user_updated
+    one_allowed_collections: null
+    one_collection: directus_users
+    one_collection_field: null
+    one_deselect_action: nullify
+    one_field: null
+    sort_field: null
+  schema:
+    table: prompt_templates
+    column: user_updated
+    foreign_key_table: directus_users
+    foreign_key_column: id
+    constraint_name: prompt_templates_user_updated_foreign
+    on_update: NO ACTION
+    on_delete: NO ACTION
